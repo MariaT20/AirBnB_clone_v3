@@ -118,7 +118,6 @@ class TestFileStorage(unittest.TestCase):
         """retrieves one object"""
         objs = self.all(cls).values()
         for obj in objs:
-            print(obj.id)
             if obj.id == id:
                 return obj
         return None
